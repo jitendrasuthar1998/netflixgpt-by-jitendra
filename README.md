@@ -9,6 +9,8 @@
 
 1. Create React App
 2. Configured TailwindCSS
+3. Header
+4. Login Form
 
 ## UI features
 
@@ -25,3 +27,6 @@
 - NetflixGPT
   - Search Bar
   - Movie Suggestions
+
+
+If you have a lot of form fields, then it becomes a tedious task to validate every single field data. To solve this problem, you can use Formik library to create your form and do form validation.
