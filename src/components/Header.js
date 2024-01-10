@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import UserLogo from "../assets/logo.webp";
 import { auth } from "../utils/firebase";
 import { signOut } from "firebase/auth";
@@ -15,7 +15,6 @@ const Header = () => {
     signOut(auth)
       .then(() => {
         dispath(removeUser());
-        // Sign-out successful.
         navigate("/");
       })
       .catch((error) => {

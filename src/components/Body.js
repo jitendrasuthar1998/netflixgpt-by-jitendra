@@ -2,9 +2,11 @@ import React from "react";
 import Login from "./Login";
 import Browse from "./Browse";
 import {
+  Navigate,
   RouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
+import PrivateRoute from "./PrivateRoute";
 
 const Body = () => {
 
@@ -15,7 +17,11 @@ const Body = () => {
     },
     {
       path: "/browse",
-      element: <Browse />,
+      element: (
+        <PrivateRoute>
+          <Browse />
+        </PrivateRoute>
+      ),
     },
   ]);
 

@@ -21,6 +21,10 @@
 12. Created Redux store with user slice
 13. Implemented Singout feature
 14. Updated User profile 
+15. Protected Route
+16. BugFix: sign up user display name
+17. BugFix: if the user is not logged in, then redirect user to "Login" page.
+
 
 #### Validation
 

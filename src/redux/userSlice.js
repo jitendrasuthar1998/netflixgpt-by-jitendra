@@ -2,9 +2,10 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   loading: false,
-  userInfo: {}, // for user object
+  userInfo: null, // for user object
   userToken: null, // for storing the JWT
   error: null,
+  loggedIn: false,
   success: false, // for monitoring the registration process.
 };
 
@@ -17,6 +18,7 @@ const userSlice = createSlice({
       state.userInfo = action.payload;
     },
     removeUser: (state) => {
+      console.log("remove user called", state.userInfo);
       state.userInfo = null;
     },
   },
