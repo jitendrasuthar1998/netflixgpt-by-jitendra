@@ -2,7 +2,7 @@ export const validateEmailAndPassword = (email, password) => {
   const isEmailValid = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/.test(
     email
   );
-  console.log("email at validation",email);
+  // console.log("email at validation",email);
 
   // console.log("isEmailValid", isEmailValid);
 

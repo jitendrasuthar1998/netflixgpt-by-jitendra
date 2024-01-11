@@ -2,14 +2,13 @@ import React from "react";
 import Login from "./Login";
 import Browse from "./Browse";
 import {
-  Navigate,
   RouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
+import { apiOptions } from "../utils/constants";
 
 const Body = () => {
-
   const appRouter = createBrowserRouter([
     {
       path: "/",
@@ -18,9 +17,10 @@ const Body = () => {
     {
       path: "/browse",
       element: (
-        <PrivateRoute>
-          <Browse />
-        </PrivateRoute>
+        <Browse />
+        // <PrivateRoute>
+
+        // </PrivateRoute>
       ),
     },
   ]);

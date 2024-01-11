@@ -24,7 +24,17 @@
 15. Protected Route
 16. BugFix: sign up user display name
 17. BugFix: if the user is not logged in, then redirect user to "Login" page.
-
+18. Added hard coded value to constants
+19. Register for TMDB API and create an app & get access token
+20. Get data from TMDP now playing movie list API
+21. Created custom hook for now playing movie
+22. Created movie slice
+23. updated store with movies data
+24. Planned for main container and secondary container
+25. Created hook to fetch trailer video
+26. update store with trailer video data
+27. Embeded the youtube video and made it run autoplay and mute
+28. Added tailwind css classes to look main container look awesome.
 
 #### Validation
 
@@ -54,3 +64,13 @@ If you have a lot of form fields, then it becomes a tedious task to validate eve
 As soon as user signs up or login, firebase sends us user object, and i will save that user object into redux store, or cookie.
 
 Login => Save user data to redux store => Access user data from redux store whererver you need it.
+
+It is very important to plan that how you will make the user interface
+
+So, before start coding, plan clearly that how you will make the user interface.
+
+What will be the main components?
+
+From where you get the data?
+
+What will be sub components?

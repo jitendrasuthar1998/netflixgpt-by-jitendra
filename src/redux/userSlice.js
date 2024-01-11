@@ -14,11 +14,9 @@ const userSlice = createSlice({
   initialState,
   reducers: {
     addUser: (state, action) => {
-      console.log("user credentials == ", action.payload);
       state.userInfo = action.payload;
     },
     removeUser: (state) => {
-      console.log("remove user called", state.userInfo);
       state.userInfo = null;
     },
   },
